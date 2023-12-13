@@ -5,6 +5,8 @@ import os
 import discord
 from discord.ext import commands
 
+import keep_alive
+
 with open('items.json', "r", encoding="utf8") as file:
   data = json.load(file)
 
@@ -34,6 +36,7 @@ async def main():
 
 # 確定執行此py檔才會執行
 if __name__ == "__main__":
+  keep_alive.keep_alive_func()
   asyncio.run(main())
 
 #bot.run(data['token'])

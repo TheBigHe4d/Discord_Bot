@@ -18,7 +18,7 @@ class Embeds(Cog_Extension):
 
   @commands.command(pass_context=True)
   async def helping(self, ctx):
-    sms = discord.Embed(title="指令", description="'忘記了嗎? 來看一下吧~~", color=0x4599)
+    sms = discord.Embed(title="指令", description="'忘記了嗎?來看一下吧", color=0x4599)
     await ctx.send(embed=sms)
 
 
